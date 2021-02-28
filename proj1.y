@@ -108,8 +108,8 @@
     		| T_MULEQUAL		{$$=2;}
     		| T_MINUSEQUAL		{$$=3;}
     		;
-    list	: ID T_EQUAL Arr		
-		| ID T_PLUSEQUAL Arr	
+    list	: T_ID T_EQUAL Arr		
+		| T_ID T_PLUSEQUAL Arr	
 		;
     Arr		: T_SQUAREBRACKET_START list T_SQUAREBRACKET_END 
 		| T_LIST T_SPECIAL_START Range T_SPECIAL_END   
